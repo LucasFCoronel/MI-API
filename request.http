@@ -1,0 +1,31 @@
+###
+POST http://localhost:3000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Jose Cuellar",
+    "age": "21",
+    "email": "JoseCuellar@gmail.com"
+}
+
+
+###
+GET http://localhost:3000/api/users HTTP/1.1
+
+
+###
+GET http://localhost:3000/api/users/663031ba86c66bce008602aa HTTP/1.1
+
+
+###
+PUT  http://localhost:3000/api/users/663031ba86c66bce008602aa HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Jose Luis Cuellar",
+    "age": "21",
+    "email": "JoseCuellar@gmail.com"
+}
+
+###
+DELETE http://localhost:3000/api/users/663031a686c66bce008602a8 HTTP/1.1
